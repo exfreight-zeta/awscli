@@ -1,0 +1,7 @@
+This repo just contains the Dockerfile to build a basic awscli Docker image that we can use in our dev environments.
+
+To build a new one modify the Dockerfile appropriately and then run
+
+./build <date>
+
+where <date> is, ideally, in the format of YYYY-MM-DD

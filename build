@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+if [ "$#" -ne 1 ]; then
+  echo "usage: ./build <YYYY-MM-DD>"
+  exit 1
+fi;
+
+DATE=$1
+
+docker build --no-cache -t exfreight/awscli:$DATE .
+docker push exfreight/awscli:$DATE
